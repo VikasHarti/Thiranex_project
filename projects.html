@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thiranex | Accessible & Modern Developer Portfolio - Projects</title>
+  
+  <!-- SEO & Open Graph Metadata -->
+  <meta name="description" content="Explore Thiranex's portfolio of accessible, high-performance web development projects, UI design systems, and compliance consulting.">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="Thiranex | Accessible & Modern Developer Portfolio - Projects">
+  <meta property="og:description" content="Browse case studies and repositories of accessible projects showcasing screen reader optimizations and clean semantic coding.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://vikasharti.github.io/Thiranex_project/projects.html">
+  <meta property="og:image" content="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='1200' height='630' viewBox='0 0 1200 630'><rect width='1200' height='630' fill='%230b0f19'/><text x='100' y='300' fill='%2310b981' font-family='sans-serif' font-size='72' font-weight='bold'>Thiranex Projects</text></svg>">
+  <link rel="canonical" href="https://vikasharti.github.io/Thiranex_project/projects.html">
+  
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💻</text></svg>">
+
+  <!-- Core Stylesheet -->
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+
+  <!-- Accessible Skip Link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Header Section -->
+  <header class="header-container">
+    <nav class="navbar" aria-label="Primary Navigation">
+      <a href="/index.html" class="nav-logo" aria-label="Thiranex Portfolio Home">
+        Thiranex<span class="accent-dot" aria-hidden="true">.</span>
+      </a>
+      
+      <!-- Controls -->
+      <div class="controls-container">
+        <!-- Theme Switcher -->
+        <button id="theme-toggle" class="theme-toggle-btn" aria-label="Switch to light theme" type="button">
+          <svg class="moon-icon" aria-hidden="true" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.718 9.718 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z"/>
+          </svg>
+          <svg class="sun-icon" aria-hidden="true" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m0 13.5V21M4.22 4.22l1.59 1.59m12.38 12.38 1.59 1.59M3 12h2.25m13.5 0H21M4.22 19.78l1.59-1.59m12.38-12.38 1.59-1.59M12 7.5a4.5 4.5 0 1 0 0 9 4.5 4.5 0 0 0 0-9Z"/>
+          </svg>
+        </button>
+        
+        <!-- Mobile Menu Trigger -->
+        <button id="menu-toggle" class="mobile-menu-btn" aria-haspopup="true" aria-expanded="false" aria-controls="nav-links-list" aria-label="Toggle Mobile Menu" type="button">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+      <!-- Nav Links -->
+      <ul id="nav-links-list" class="nav-links">
+        <li><a href="/index.html" class="nav-link">Home</a></li>
+        <li><a href="/about.html" class="nav-link">About</a></li>
+        <li><a href="/projects.html" class="nav-link active" aria-current="page">Projects</a></li>
+        <li><a href="/contact.html" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main id="main-content" tabindex="-1">
+    
+    <section class="section projects-section" aria-labelledby="projects-heading">
+      <h1 id="projects-heading">Selected Works</h1>
+      <p class="section-lead">A collection of projects engineered with deep performance optimizations and accessibility at their core.</p>
+      
+      <!-- Accessible Filters Panel -->
+      <div class="filter-panel" style="margin-top: 2rem;">
+        <h2 id="filter-heading" class="sr-only">Filter Projects</h2>
+        <div id="project-filters" class="filter-container" aria-labelledby="filter-heading">
+          <button class="filter-btn active" data-filter="all" aria-pressed="true" type="button">All Projects</button>
+          <button class="filter-btn" data-filter="dev" aria-pressed="false" type="button">Development</button>
+          <button class="filter-btn" data-filter="design" aria-pressed="false" type="button">Design Systems</button>
+          <button class="filter-btn" data-filter="audit" aria-pressed="false" type="button">Accessibility Audits</button>
+        </div>
+      </div>
+
+      <!-- Projects Grid -->
+      <div class="grid-3" style="margin-top: 2rem;">
+        
+        <!-- Project 1 (Development) -->
+        <article class="card project-card" data-category="dev" aria-labelledby="project-1-title">
+          <svg viewBox="0 0 400 220" width="100%" height="auto" aria-label="Graphic showcasing custom interface elements of the e-commerce design" role="img">
+            <rect width="100%" height="100%" fill="var(--bg-tertiary)" />
+            <rect x="50" y="40" width="300" height="140" rx="10" fill="none" stroke="var(--primary)" stroke-width="4" />
+            <circle cx="90" cy="80" r="15" fill="var(--primary)"/>
+            <rect x="120" y="70" width="150" height="20" rx="5" fill="var(--border-glass)" />
+            <line x1="90" y1="120" x2="310" y2="120" stroke="var(--border-glass)" stroke-width="4"/>
+            <line x1="90" y1="140" x2="250" y2="140" stroke="var(--border-glass)" stroke-width="4"/>
+          </svg>
+          <h3 id="project-1-title" style="margin-top: 1.5rem;">Inclusive e-Commerce Portal</h3>
+          <p>A high-performance e-commerce catalog featuring fully screen reader accessible checkout workflows and tab-navigable cart systems built from scratch.</p>
+          <div class="project-meta">
+            <span class="skill-tag" style="margin: 0; padding: 0.25rem 0.75rem; font-size: 0.75rem;">React / ARIA</span>
+            <div class="project-links">
+              <a href="https://github.com" class="project-link" aria-label="View e-Commerce Portal source code on GitHub" target="_blank" rel="noopener">
+                <span>Code</span>
+                <svg aria-hidden="true" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2 (Design) -->
+        <article class="card project-card" data-category="design" aria-labelledby="project-2-title">
+          <svg viewBox="0 0 400 220" width="100%" height="auto" aria-label="Graphic representing structural styling tokens of the A11y UI library" role="img">
+            <rect width="100%" height="100%" fill="var(--bg-tertiary)" />
+            <polygon points="200,30 330,190 70,190" fill="none" stroke="var(--secondary)" stroke-width="4" />
+            <circle cx="200" cy="120" r="30" fill="none" stroke="var(--primary)" stroke-width="4" />
+          </svg>
+          <h3 id="project-2-title" style="margin-top: 1.5rem;">A11y Glass UI Design System</h3>
+          <p>A sleek, premium CSS component library using responsive glassmorphism styles designed strictly to WCAG 2.1 AAA color contrast criteria.</p>
+          <div class="project-meta">
+            <span class="skill-tag" style="margin: 0; padding: 0.25rem 0.75rem; font-size: 0.75rem;">CSS / Design System</span>
+            <div class="project-links">
+              <a href="https://github.com" class="project-link" aria-label="View A11y Glass UI source code on GitHub" target="_blank" rel="noopener">
+                <span>Code</span>
+                <svg aria-hidden="true" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 3 (Audit) -->
+        <article class="card project-card" data-category="audit" aria-labelledby="project-3-title">
+          <svg viewBox="0 0 400 220" width="100%" height="auto" aria-label="Graphic showing accessibility checkmarks and evaluation meters" role="img">
+            <rect width="100%" height="100%" fill="var(--bg-tertiary)" />
+            <circle cx="200" cy="110" r="70" fill="none" stroke="var(--accent)" stroke-width="6"/>
+            <path d="M170 110 L195 135 L240 85" stroke="var(--accent)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+          </svg>
+          <h3 id="project-3-title" style="margin-top: 1.5rem;">Financial Console Compliance Audit</h3>
+          <p>A full accessibility remediation audit for a massive multi-module analytics platform, correcting keyboard trap bugs and modal aria role bindings.</p>
+          <div class="project-meta">
+            <span class="skill-tag" style="margin: 0; padding: 0.25rem 0.75rem; font-size: 0.75rem;">Audit / WCAG 2.1</span>
+            <div class="project-links">
+              <a href="https://github.com" class="project-link" aria-label="View Financial Console Audit report on GitHub" target="_blank" rel="noopener">
+                <span>Report</span>
+                <svg aria-hidden="true" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 4 (Development) -->
+        <article class="card project-card" data-category="dev" aria-labelledby="project-4-title">
+          <svg viewBox="0 0 400 220" width="100%" height="auto" aria-label="Graphic depicting an accessible markdown parser diagram structure" role="img">
+            <rect width="100%" height="100%" fill="var(--bg-tertiary)" />
+            <rect x="60" y="50" width="280" height="120" rx="6" fill="none" stroke="var(--primary)" stroke-width="4" />
+            <text x="90" y="120" fill="var(--text-secondary)" font-family="monospace" font-size="28" font-weight="bold">&lt;article&gt;</text>
+          </svg>
+          <h3 id="project-4-title" style="margin-top: 1.5rem;">Semantic Document Generator</h3>
+          <p>A markdown parser that compiles markdown structure directly into high-fidelity semantic HTML elements matching WCAG navigation standards.</p>
+          <div class="project-meta">
+            <span class="skill-tag" style="margin: 0; padding: 0.25rem 0.75rem; font-size: 0.75rem;">Node.js / Semantic</span>
+            <div class="project-links">
+              <a href="https://github.com" class="project-link" aria-label="View Semantic Document Generator source code on GitHub" target="_blank" rel="noopener">
+                <span>Code</span>
+                <svg aria-hidden="true" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="footer-container">
+      <p class="footer-copy">&copy; 2026 Thiranex. All rights reserved. Crafted following WCAG AA specifications.</p>
+      <ul class="social-links" aria-label="Social Media Profile Links">
+        <li>
+          <a href="https://github.com" class="social-link" aria-label="Thiranex GitHub Profile (opens in new window)" target="_blank" rel="noopener">
+            <svg width="20" height="20" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true">
+              <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="https://linkedin.com" class="social-link" aria-label="Thiranex LinkedIn Profile (opens in new window)" target="_blank" rel="noopener">
+            <svg width="20" height="20" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true">
+              <path d="M0 1.146C0 .513.52 0 1.146 0H13.85C14.48 0 15 .513 15 1.146v13.708c0 .633-.52 1.146-1.146 1.146H1.146C.513 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+
+  <!-- Core JavaScript -->
+  <script src="/js/main.js"></script>
+</body>
+</html>
