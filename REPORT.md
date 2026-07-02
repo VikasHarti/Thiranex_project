@@ -82,3 +82,39 @@ In Step 2, we took our structural layout and turned it into a premium, responsiv
     *   **Micro-animations:** Interactive cards scale up and glow when hovered, and buttons react smoothly to hover and keyboard focus events.
     *   **Vibrant Gradients:** Linear blue and purple gradients were added to highlights and buttons to give the site a modern, energetic feel.
 
+---
+
+## 4. What Did I Learn in Step 3? (JavaScript Logic, State Management & Local Storage)
+
+In Step 3, we built an interactive Task Manager (To-Do List) app. Here is what we learned and did in simple terms:
+
+### 🧩 Central State Management
+*   **What we did:** Instead of reading and writing values directly to the HTML page all the time, we stored all task data in a central JavaScript list (an array of objects). The UI simply updates itself automatically to reflect the current state of this list.
+*   *Why this matters:* It makes managing complex data clean and prevents bugs where the visual UI gets out of sync with the actual data.
+
+### 💾 Local Data Persistence (localStorage)
+*   **What we did:** We programmed the app to save the tasks list in the browser's storage (`window.localStorage`) whenever tasks are added, completed, edited, or deleted. We wrapped this in `try-catch` blocks.
+*   *Why this matters:* It prevents the website from crashing if the browser blocks storage (like in private browsing), and ensures your tasks are not lost when you reload the page or close the tab.
+
+### ⚡ Event Delegation (Smart Event Handling)
+*   **What we did:** Instead of adding click listeners to every single task card, checkbox, edit button, and delete button individually, we attached one single listener to the parent container (`#todo-list`). We then look at which button was clicked using `e.target`.
+*   *Why this matters:* It is highly efficient, uses very little memory, and automatically handles click events for new tasks added to the page dynamically without needing to re-bind event listeners.
+
+### ⚙️ Full CRUD Cycle (Create, Read, Update, Delete)
+*   **What we did:** We built all four essential database operations:
+    *   **Create:** Adding a task with title validation, selected priorities, and due dates.
+    *   **Read:** Loading and displaying tasks matching search queries, sort orders, and filter tabs.
+    *   **Update:** Toggling a task as checked/unchecked, and using an inline edit mode to change titles and dates.
+    *   **Delete:** Removing tasks with smooth fading exit animations.
+
+### 🗣️ JavaScript Web Accessibility (WCAG 2.1)
+*   **What we did:** We kept accessibility alive in dynamic JavaScript by:
+    *   Using an `aria-live="polite"` region to read out actions (like "Task added", "Task deleted") to screen readers.
+    *   Managing keyboard focus so that when you edit or restore a task, your keyboard cursor immediately jumps to the right place.
+    *   Setting proper `aria-checked` states for custom-built buttons.
+
+### 🔄 Interactive Undo & Recovery
+*   **What we did:** When a task is deleted, we temporarily store it in a backup. We display a toast notification with an "Undo" button at the bottom of the screen. Clicking it restores the task at its exact previous position.
+*   *Why this matters:* It gives users a second chance to recover accidentally deleted information without showing annoying confirmation dialogs.
+
+
